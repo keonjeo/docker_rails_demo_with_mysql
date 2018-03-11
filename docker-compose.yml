@@ -14,5 +14,7 @@ services:
     image: mysql:5.6.34
     ports:
       - "3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "hellokitty@123"
     volumes:
       - ./tmp/db:/var/lib/mysql
